@@ -12,10 +12,12 @@
           </p>
         </li>
         <li>
-          <p class="hover-ul">Projects</p>
+          <p class="hover-ul"
+            @click="jumpTo('Projects')">Projects</p>
         </li>
         <li>
-          <p class="hover-ul">Contact</p>
+          <p class="hover-ul"
+          @click="jumpTo('Contact')">Contact</p>
         </li>
       </ul>
     </div>
