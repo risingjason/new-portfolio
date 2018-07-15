@@ -106,22 +106,14 @@ a {
 }
 
 /* Next Page Transition */
-.next-page-enter {
-  opacity: 0;
-  transform: translateX(10em);
+.next-page-enter-active, .next-page-leave-active {
   transition: all .5s ease-in-out;
 }
-.next-page-enter-to {
-  opacity: 1;
-  transition: all .3s ease-in-out;
-}
-.next-page-leave {
-  opacity: 1;
-  transition: all .3s ease-in-out;
-}
-.next-page-leave-to {
+.next-page-enter, .next-page-leave-to {
   opacity: 0;
   transform: translateX(10em);
-  transition: all .5s ease-in-out;
+}
+.next-page-enter-to, .next-page-leave {
+  opacity: 1;
 }
 </style>
