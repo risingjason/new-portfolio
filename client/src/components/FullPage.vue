@@ -1,11 +1,15 @@
 <template>
-  <div id="home"
+  <div id="base"
     :style="{ backgroundColor: homeStyle.backgroundColor }">
-    <div class="navigate"> 
-      <p class="name">Jason Yatfai Zhang</p>
+    <div class="navigate">
+      <p class="name"
+        @click="jumpTo('Home')">Jason Yatfai Zhang</p>
       <ul class="navi">
         <li>
-          <p class="hover-ul">About</p>
+          <p class="hover-ul"
+            @click="jumpTo('About')">
+            About
+          </p>
         </li>
         <li>
           <p class="hover-ul">Projects</p>
@@ -16,20 +20,27 @@
       </ul>
     </div>
     <div class="content">
-      <p>Home Page</p>
+      <router-view />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'FullPage',
   data() {
     return {
       homeStyle: {
         backgroundColor: '#f0fff0',
       },
     };
+  },
+  methods: {
+    jumpTo(routeName) {
+      this.$router.push({
+        name: routeName,
+      });
+    },
   },
 };
 </script>
@@ -47,7 +58,7 @@ a {
   color: black;
   text-decoration: none;
 }
-#home {
+#base {
   width: 100%;
   height: 100%;
 
