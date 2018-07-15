@@ -7,8 +7,8 @@
       <ul class="navi">
         <li>
           <p class="hover-ul"
-            @click="jumpTo('About')">
-            About
+            @click="jumpTo('Home')">
+            Home
           </p>
         </li>
         <li>
@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       homeStyle: {
-        backgroundColor: '#f0fff0',
+        backgroundColor: '#e0e0ff',
       },
     };
   },
@@ -91,8 +91,13 @@ a {
   width: 70%;
   height: 100%;
   padding-right: 5em;
-  border-left: solid #dddddd;
+
+  border-left: solid #202020;
   border-left-width: 1px;
+}
+.content > * {
+  margin: 0 5em;
+  margin-top: 4em;
 }
 .hover-ul {
   cursor: pointer;

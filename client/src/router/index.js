@@ -2,7 +2,6 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import FullPage from '@/components/FullPage';
 import HomePage from '@/components/HomePage';
-import AboutPage from '@/components/AboutPage';
 import ProjectPage from '@/components/ProjectPage';
 import ContactPage from '@/components/ContactPage';
 
@@ -18,11 +17,6 @@ export default new Router({
           path: '',
           component: HomePage,
           name: 'Home',
-        },
-        {
-          path: '/about',
-          component: AboutPage,
-          name: 'About',
         },
         {
           path: '/projects',
