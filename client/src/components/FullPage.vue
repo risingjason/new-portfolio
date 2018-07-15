@@ -22,7 +22,7 @@
       </ul>
     </div>
     <div class="content">
-      <transition name="next-page" mode="out-in"> 
+      <transition name="next-page" mode="out-in">
         <router-view />
       </transition>
     </div>
@@ -68,13 +68,14 @@ a {
 
   display: flex;
   flex-direction: row;
-  text-align: center;
 }
 .navigate {
-  width: 50%;
+  width: 30%;
   border-right: solid #dddddd;
   border-right-width: 1px;
-
+  padding-left: 5em;
+  padding-right: 3em;
+  text-align: end;
   display: flex;
   flex-direction: column;;
 }
@@ -85,15 +86,16 @@ a {
 }
 .navigate > .navi li {
   margin: 0.5em 0;
-  cursor: pointer;
 }
 .content {
-  width: 50%;
+  width: 70%;
   height: 100%;
+  padding-right: 5em;
   border-left: solid #dddddd;
   border-left-width: 1px;
 }
 .hover-ul {
+  cursor: pointer;
   padding: 0 0.25em;
   display: inline-block;
 }
