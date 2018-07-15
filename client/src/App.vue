@@ -25,4 +25,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: #585858;
 }
+/* Global Styles */
+.dark-red {
+  color: #b30000;
+}
 </style>

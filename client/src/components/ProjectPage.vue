@@ -10,8 +10,8 @@ export default {
     return {};
   },
   created() {
-    console.log(this.$route.name)
-  }
+    console.log(this.$route.name);
+  },
 };
 </script>
 

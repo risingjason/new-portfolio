@@ -35,7 +35,8 @@ export default {
   data() {
     return {
       homeStyle: {
-        backgroundColor: '#e0e0ff',
+        // backgroundColor: '#e0e0ff',
+        backgroundColor: '#fefefe',
       },
     };
   },
@@ -70,7 +71,7 @@ a {
   flex-direction: row;
 }
 .navigate {
-  width: 30%;
+  width: 15%;
   border-right: solid #dddddd;
   border-right-width: 1px;
   padding-left: 5em;
@@ -88,8 +89,9 @@ a {
   margin: 0.5em 0;
 }
 .content {
-  width: 70%;
+  width: 85%;
   height: 100%;
+  overflow-y: scroll;
   padding-right: 5em;
 
   border-left: solid #202020;
