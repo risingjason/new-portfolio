@@ -20,7 +20,9 @@
       </ul>
     </div>
     <div class="content">
-      <router-view />
+      <transition name="next-page" mode="out-in"> 
+        <router-view />
+      </transition>
     </div>
   </div>
 </template>
@@ -97,5 +99,25 @@ a {
   transition: .3s ease-in-out;
   box-shadow: 0 1.5px #585858;
   /* text-decoration: underline; */
+}
+
+/* Next Page Transition */
+.next-page-enter {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: all .5s ease-in-out;
+}
+.next-page-enter-to {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.next-page-leave {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.next-page-leave-to {
+  opacity: 0;
+  transform: translateX(10em);
+  transition: all .5s ease-in-out;
 }
 </style>
