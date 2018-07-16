@@ -4,8 +4,10 @@ import FullPage from '@/components/FullPage';
 import HomePage from '@/components/HomePage';
 import ProjectPage from '@/components/ProjectPage';
 import ContactPage from '@/components/ContactPage';
+import NavBar from '@/components/NavBar';
 
 Vue.use(Router);
+Vue.component('nav-bar', NavBar);
 
 export default new Router({
   routes: [

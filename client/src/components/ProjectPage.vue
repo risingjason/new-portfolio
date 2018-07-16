@@ -9,7 +9,7 @@
         <h1 class="section-title dark-red">
           Discord Chat Bot
         </h1>
-        <a href="https://github.com/risingjason/discord-bot-nodejs">Github</a>
+        <a href="https://github.com/risingjason/discord-bot-nodejs" target="_blank">Github</a>
         <div class="description">
           <p>
           A Discord bot that reads user input and returns replies.
@@ -23,7 +23,8 @@
           <br />
           !!yugioh
           <br />
-          Allows users to search for a card and if the card exists, the bot will output descriptions and the image of the card.
+          Allows users to search for a card and if the card exists,
+          the bot will output descriptions and the image of the card.
           </p>
         </div>
       </div>
