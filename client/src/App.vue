@@ -12,6 +12,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
 body {
   margin: 0 !important;
@@ -26,7 +27,38 @@ body {
   color: #585858;
 }
 /* Global Styles */
+.content-parent {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* text-align: center; */
+}
 .dark-red {
   color: #b30000;
+}
+.light-gray {
+  color: #aeaeae;
+}
+.page-head {
+}
+.page-head > * {
+  margin: 0;
+}
+.section {
+  margin: 2em 0;
+}
+.section-title > h1 {
+  margin: 0;
+}
+.section-title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5em;
+}
+.section-description {
+  color: black;
+  font-size: 0.9em;
 }
 </style>

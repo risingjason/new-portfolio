@@ -13,11 +13,15 @@
         </li>
         <li>
           <p class="hover-ul"
-            @click="jumpTo('Projects')">Projects</p>
+            @click="jumpTo('Projects')">
+            Projects
+          </p>
         </li>
         <li>
           <p class="hover-ul"
-          @click="jumpTo('Contact')">Contact</p>
+            @click="jumpTo('Contact')">
+            Contact
+          </p>
         </li>
       </ul>
     </div>
