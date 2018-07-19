@@ -38,8 +38,8 @@ export default {
         name: routeName,
       });
     },
-  }
-}
+  },
+};
 </script>
 
 <style>

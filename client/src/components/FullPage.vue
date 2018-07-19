@@ -85,7 +85,7 @@ export default {
 
 /* Next Page Transition */
 .next-page-enter-active, .next-page-leave-active {
-  transition: all .5s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 .next-page-enter, .next-page-leave-to {
   opacity: 0;

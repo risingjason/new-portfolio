@@ -42,10 +42,11 @@ body {
 .light-gray {
   color: #aeaeae;
 }
-.page-head {
-}
 .page-head > * {
   margin: 0;
+}
+.page-head > h2 {
+  margin: 1em 0;
 }
 .section {
   margin: 2em 0;
