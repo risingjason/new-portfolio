@@ -1,31 +1,10 @@
 <template>
   <div id="base"
     :style="{ backgroundColor: homeStyle.backgroundColor }">
-    <!-- <div class="navigate">
-      <p class="name dark-red"
-        @click="jumpTo('Home')">Jason Yatfai Zhang</p>
-      <ul class="navi">
-        <li>
-          <p class="hover-ul"
-            @click="jumpTo('Home')">
-            Home
-          </p>
-        </li>
-        <li>
-          <p class="hover-ul"
-            @click="jumpTo('Projects')">
-            Projects
-          </p>
-        </li>
-        <li>
-          <p class="hover-ul"
-            @click="jumpTo('Contact')">
-            Contact
-          </p>
-        </li>
-      </ul>
-    </div> -->
+    <!-- nav bar -->
     <nav-bar class="navigate"></nav-bar>
+
+    <!-- content  -->
     <div class="content">
       <transition name="next-page" mode="out-in">
         <router-view />

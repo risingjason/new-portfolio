@@ -46,20 +46,7 @@ body {
   margin: 0;
 }
 .page-head > h2 {
-  margin: 1em 0;
+  margin-bottom: 1em;
 }
-.section {
-  margin: 2em 0;
-}
-.section-title > h1 {
-  margin: 0;
-}
-.section-title {
-  font-family: 'PT Sans', sans-serif;
-  font-size: 1.5em;
-}
-.section-description {
-  color: black;
-  font-size: 0.9em;
-}
+
 </style>

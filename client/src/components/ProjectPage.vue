@@ -78,13 +78,22 @@ a:hover, a:visited {
   border-radius: 5px;
   transition: all .3s ease-in-out;
 }
+.section-description {
+  color: black;
+  font-size: 0.9em;
+}
 .section:active, .section:focus, .section:hover {
   box-shadow: 5px 5px 50px #cecece;
   transform: scale(1.025);
   transition: all .3s ease-in-out;
 }
 .section-title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5em;
   margin-top: 0;
+}
+.section-title > h1 {
+  margin: 0;
 }
 
 .left {
