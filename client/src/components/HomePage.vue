@@ -3,9 +3,9 @@
     <div id="welcome" class="page-head">
       <h2 class="dark-red">Welcome!</h2>
     </div>
-    <div id="about-me" class="section">
-      <h1 class="section-title dark-red">About Me</h1>
-      <div class="section-description">
+    <div id="about-me">
+      <h1 class="dark-red">About Me</h1>
+      <div class="description">
         <p>
         I graduated from UC Davis with a degree in Computer Science.
         <br />

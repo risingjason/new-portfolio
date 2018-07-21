@@ -1,0 +1,9 @@
+[
+  {
+    "projectTitle": "Discord Chat Bot",
+    "projectDescription": "A Discord bot that reads user input and returns replies.\nCreated with Discord.js and hosted with Heroku.\nUses various APIs to display data from based on user inputs.",
+    "projectExamples": "!!yugioh\nAllows users to search for a card and if the card exists, the bot will output descriptions and the image of the card.",
+    "projectImage": "project-discord-bot.png",
+    "projectLink": "https://github.com/risingjason/discord-bot-nodejs"
+  }
+]

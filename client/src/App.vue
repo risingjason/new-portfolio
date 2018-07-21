@@ -32,9 +32,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-content: center; */
-  /* text-align: center; */
 }
 .dark-red {
   color: #b30000;
@@ -48,5 +45,8 @@ body {
 .page-head > h2 {
   margin-bottom: 1em;
 }
-
+.description {
+  color: black;
+  font-size: 0.9em;
+}
 </style>
