@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 #navbar {
-  width: 15%;
+  width: 100%;
   border-right: solid #dddddd;
   border-right-width: 1px;
   padding-left: 5em;
@@ -76,6 +76,7 @@ a {
   cursor: pointer;
   padding: 0 0.25em;
   display: inline-block;
+  transition: .15s ease-in-out;
 }
 .hover-ul:hover {
   transition: .3s ease-in-out;

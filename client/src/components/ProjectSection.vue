@@ -9,15 +9,16 @@
       <p class="light-gray">Click to see the Project Link!</p>
       <div class="description" >
         <p v-html="createBreak(projectDescription)"></p>
-        <p class="light-gray">Examples</p>
-        <p v-html="createBreak(projectExamples)"></p>
+        <p class="light-gray">Tech</p>
+        <p v-html="createBreak(projectTech)"></p>
       </div>
     </div>
     <div class="right">
-      <div
+      <img :src="getImage(projectImage)" alt="">
+      <!-- <div
         class="project-image"
         :style="{ backgroundImage: `url(${getImage(projectImage)})`}"
-      />
+      /> -->
     </div>
   </div>
 </template>
@@ -27,7 +28,7 @@ export default {
   props: {
     projectTitle: String,
     projectDescription: String,
-    projectExamples: String,
+    projectTech: String,
     projectImage: String,
     projectLink: String,
   },
@@ -54,14 +55,18 @@ p {
   margin: 0.5em 0;
 }
 #section {
-  margin: 0;
-  padding: 0.5em;
-  height: 14em;
-
-  display: flex;
+  margin-bottom: 1em;
+  padding: 0.5em 0.85em;
+  width: 100%;
+  height: auto;
+  max-height: 12.5em;
   overflow: hidden;
-  flex-direction: row;
-  justify-content: space-between;
+
+  flex: 1;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
 
   border: solid 2px #efefef;
   border-radius: 5px;
@@ -88,19 +93,29 @@ p {
 }
 
 .left {
-  width: 100%;
-  height: 100%;
-  align-self: flex-start;
+  width: inherit;
+  height: inherit;
+  grid-column: 1;
+  /* flex-basis: 50%;
+  align-self: flex-start; */
 }
 .right {
-  width: 100%;
-  height: 100%;
-  align-self: flex-end;
+  width: inherit;
+  height: inherit;
+  grid-column: 2;
+  /* flex-basis: 50%;
+  align-self: flex-start; */
 }
-.project-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center top;
+.right > img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  overflow: auto;
+  max-height: 12.5em;
+  object-position: top;
+  object-fit: cover;
+  max-width: 100%;
 }
 </style>

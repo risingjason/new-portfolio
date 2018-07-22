@@ -46,21 +46,21 @@ export default {
   display: flex;
   flex-direction: row;
 }
-
+.navigate {
+  flex-basis: 15%;
+}
 .content {
-  width: 85%;
+  flex-basis: 85%;
+
+  /* width: 100%; */
   height: 100%;
   overflow-y: scroll;
-  padding-right: 5em;
+  /* padding: 0 2em; */
+  /* padding-right: 5em; */
 
   border-left: solid #202020;
   border-left-width: 1px;
 }
-.content > * {
-  margin: 0 5em;
-  margin-top: 4em;
-}
-
 
 /* Next Page Transition */
 .next-page-enter-active, .next-page-leave-active {

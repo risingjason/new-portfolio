@@ -14,12 +14,13 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
-body {
+html, body {
+  height: 100%;
   margin: 0 !important;
 }
 #app {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -28,8 +29,9 @@ body {
 }
 /* Global Styles */
 .content-parent {
+  width: 100%;
   height: 100%;
-
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
 }
