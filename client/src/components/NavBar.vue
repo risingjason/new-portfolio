@@ -17,12 +17,6 @@
           Projects
         </p>
       </li>
-      <li>
-        <p class="hover-ul"
-          @click="jumpTo('Contact')">
-          Contact
-        </p>
-      </li>
     </ul>
   </div>
 </template>

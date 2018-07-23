@@ -14,6 +14,7 @@
         <p v-html="createBreak(projectTech)"></p>
       </div>
     </div>
+
     <div class="right">
       <img :src="getImage(projectImage)" alt="">
     </div>

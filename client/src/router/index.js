@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import FullPage from '@/components/FullPage';
 import HomePage from '@/components/HomePage';
 import ProjectPage from '@/components/ProjectPage';
-import ContactPage from '@/components/ContactPage';
 import NavBar from '@/components/NavBar';
 import ProjectSection from '@/components/ProjectSection';
 
@@ -28,11 +27,6 @@ export default new Router({
           path: '/projects',
           component: ProjectPage,
           name: 'Projects',
-        },
-        {
-          path: '/contact',
-          component: ContactPage,
-          name: 'Contact',
         },
       ],
     },
