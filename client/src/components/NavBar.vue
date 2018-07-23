@@ -53,11 +53,12 @@ a {
 }
 #navbar {
   width: 100%;
-  border-right: solid #dddddd;
-  border-right-width: 1px;
+  height: 100%;
+
   padding-left: 5em;
   padding-right: 3em;
   text-align: end;
+
   display: flex;
   flex-direction: column;;
 }

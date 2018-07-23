@@ -28,13 +28,6 @@ html, body {
   color: #585858;
 }
 /* Global Styles */
-.content-parent {
-  width: 100%;
-  height: 100%;
-  padding: 0 1em;
-  display: flex;
-  flex-direction: column;
-}
 .dark-red {
   color: #b30000;
 }
@@ -43,6 +36,7 @@ html, body {
 }
 .page-head > * {
   margin: 0;
+  font-size: 2em;
 }
 .page-head > h2 {
   margin-bottom: 1em;

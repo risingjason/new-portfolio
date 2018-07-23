@@ -3,7 +3,7 @@
     :style="{ backgroundColor: homeStyle.backgroundColor }">
     <!-- nav bar -->
     <nav-bar class="navigate"></nav-bar>
-
+    <hr>
     <!-- content  -->
     <div class="content">
       <transition name="next-page" mode="out-in">
@@ -36,7 +36,7 @@ export default {
 
 <style scoped>
 * {
-  font-size: 20px;
+  font-size: 1.1vw;
   margin: 0;
 }
 #base {
@@ -51,15 +51,11 @@ export default {
 }
 .content {
   flex-basis: 85%;
-
-  /* width: 100%; */
   height: 100%;
-  overflow-y: scroll;
-  /* padding: 0 2em; */
-  /* padding-right: 5em; */
-
-  border-left: solid #202020;
-  border-left-width: 1px;
+  overflow-y: auto;
+}
+.content > * {
+  margin: 1em 4em 0em 4em;
 }
 
 /* Next Page Transition */

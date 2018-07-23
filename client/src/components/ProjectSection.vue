@@ -1,5 +1,6 @@
 <template>
-  <div id="section"
+  <div 
+    id="section"
     @click="openLink(projectLink)"
   >
     <div class="left">
@@ -15,10 +16,6 @@
     </div>
     <div class="right">
       <img :src="getImage(projectImage)" alt="">
-      <!-- <div
-        class="project-image"
-        :style="{ backgroundImage: `url(${getImage(projectImage)})`}"
-      /> -->
     </div>
   </div>
 </template>
@@ -55,15 +52,13 @@ p {
   margin: 0.5em 0;
 }
 #section {
-  margin-bottom: 1em;
   padding: 0.5em 0.85em;
-  width: 100%;
+  margin-bottom: 1.5em;
+
   height: auto;
   max-height: 12.5em;
-  overflow: hidden;
 
   flex: 1;
-
   display: grid;
   grid-template-rows: 100%;
   grid-template-columns: 50% 50%;
@@ -72,6 +67,7 @@ p {
   border-radius: 5px;
   transition: all .3s ease-in-out;
 
+  overflow: hidden;
   cursor: pointer;
 }
 #section:active, #section:focus, #section:hover {
@@ -96,26 +92,22 @@ p {
   width: inherit;
   height: inherit;
   grid-column: 1;
-  /* flex-basis: 50%;
-  align-self: flex-start; */
 }
 .right {
   width: inherit;
   height: inherit;
   grid-column: 2;
-  /* flex-basis: 50%;
-  align-self: flex-start; */
 }
 .right > img {
   display: block;
   margin: 0;
   padding: 0;
-  width: inherit;
-  height: inherit;
-  overflow: auto;
+
+  width: 100%;
+  height: 100%;
   max-height: 12.5em;
+
   object-position: top;
   object-fit: cover;
-  max-width: 100%;
 }
 </style>
