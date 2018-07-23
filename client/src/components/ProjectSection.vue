@@ -1,5 +1,5 @@
 <template>
-  <div 
+  <div
     id="section"
     @click="openLink(projectLink)"
   >
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import methods from '@/helpers';
+
 export default {
   props: {
     projectTitle: String,
@@ -31,7 +33,9 @@ export default {
     projectLink: String,
   },
   data() {
-    return {};
+    return {
+      openLink: methods.openLink,
+    };
   },
   methods: {
     createBreak(text) {
@@ -40,9 +44,6 @@ export default {
     getImage(img) {
       const image = require.context('../assets/', false, /\.png$/);
       return image(`./${img}`);
-    },
-    openLink(link) {
-      window.open(link, '_blank');
     },
   },
 };

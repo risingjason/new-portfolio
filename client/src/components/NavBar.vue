@@ -1,9 +1,12 @@
 <template>
   <div id="navbar">
+    <!-- name -->
     <p class="name dark-red"
       @click="jumpTo('Home')">
       Jason Yatfai Zhang
     </p>
+
+    <!-- nav bar links -->
     <ul class="navi">
       <li>
         <p class="hover-ul"
@@ -18,13 +21,28 @@
         </p>
       </li>
     </ul>
+
+    <!-- contact links -->
+    <div class="contact-links">
+      <!-- <font-awesome-icon icon="linkedin-in" /> -->
+      <font-awesome-icon
+        @click="openLink('https://linkedin.com/in/jasonyatfaizhang')"
+        :icon="['fab', 'linkedin-in']" />
+      <font-awesome-icon
+        @click="openLink('https://github.com/risingjason')"
+        :icon="['fab', 'github']" />
+    </div>
   </div>
 </template>
 
 <script>
+import methods from '@/helpers';
+
 export default {
   data() {
-    return {};
+    return {
+      openLink: methods.openLink,
+    };
   },
   methods: {
     jumpTo(routeName) {
@@ -77,5 +95,14 @@ a {
   transition: .3s ease-in-out;
   box-shadow: 0 1.5px #585858;
   /* text-decoration: underline; */
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.contact-links > * {
+  margin: 0 1em;
+  cursor: pointer;
 }
 </style>
