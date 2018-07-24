@@ -102,7 +102,7 @@ a {
   justify-content: flex-end;
 }
 .contact-links > * {
-  margin: 0 1em;
+  margin: 0 0.5em;
   cursor: pointer;
 }
 </style>
