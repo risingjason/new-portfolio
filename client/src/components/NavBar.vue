@@ -40,9 +40,7 @@ import methods from '@/helpers';
 
 export default {
   data() {
-    return {
-      openLink: methods.openLink,
-    };
+    return {};
   },
   methods: {
     jumpTo(routeName) {
@@ -50,6 +48,10 @@ export default {
       this.$router.push({
         name: routeName,
       });
+    },
+    openLink(link) {
+      this.$emit('routeChange');
+      methods.openLink(link);
     },
   },
 };
