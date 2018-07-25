@@ -201,7 +201,7 @@ export default {
 }
 @media screen and (max-width: 800px) {
   * {
-    font-size: 2vw;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 500px) {

@@ -39,13 +39,21 @@ export default {
   },
   methods: {
     createBreak(text) {
-      return text.split('\n').join('<br />');
+      if (!this.isTablet) {
+        return text.split('\n').join('<br />');
+      }
+      return text;
     },
     getImage(img) {
       const image = require.context('../assets/', false, /\.png$/);
       return image(`./${img}`);
     },
   },
+  computed: {
+    isTablet() {
+      return this.$mq === 'smMobile' || this.$mq === 'mdMobile' || this.$mq === 'smTablet' || this.$mq === 'lgTablet';
+    },
+  }
 };
 </script>
 
@@ -116,10 +124,24 @@ p {
 }
 
 /* Tablets and Mobile */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 700px) {
+  #section {
+    grid-auto-rows: 50%;
+    /* grid-template-columns: 100%; */
+    max-height: 30em;
+  }
   #section:active, #section:focus, #section:hover {
     box-shadow: none;
     transform: scale(1);
+  }
+  .left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .right {
+    /* width: 50em; */
+    grid-column: 1;
+    grid-row: 2;
   }
 }
 </style>
