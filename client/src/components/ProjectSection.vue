@@ -27,20 +27,18 @@ import methods from '@/helpers';
 export default {
   props: {
     projectTitle: String,
-    projectDescription: String,
-    projectTech: String,
+    projectDescription: Array,
+    projectTech: Array,
     projectImage: String,
     projectLink: String,
   },
   data() {
     return {
       openLink: methods.openLink,
+      createBreak: methods.createBreak,
     };
   },
   methods: {
-    createBreak(text) {
-      return text.split('\n').join('<br />');
-    },
     getImage(img) {
       const image = require.context('../assets/', false, /\.png$/);
       return image(`./${img}`);

@@ -3,30 +3,35 @@
     <div id="welcome" class="page-head">
       <h2 class="dark-red">Welcome!</h2>
     </div>
-    <div id="about-me">
-      <h1 class="dark-red">About Me</h1>
-      <div class="description">
-        <p>
-        I graduated from UC Davis with a degree in Computer Science.
-        <br />
-        If you want to learn more, check out the projects section.
-        <br />
-        Or, if you would rather get in touch with me, check out the contact page.
-        </p>
-      </div>
+
+    <div
+      class="title"
+      v-for="(article, key) in home" :key="key">
+      <h1 class="dark-red">{{ article.title }}</h1>
+      <p v-html="createBreak(article.description)" class="description"></p>
     </div>
   </div>
 </template>
 
 <script>
+import methods from '@/helpers';
+import homeText from '@/text/home.json';
+
 export default {
   data() {
-    return {};
-  },
-  created() {
+    return {
+      createBreak: methods.createBreak,
+      home: homeText,
+    };
   },
 };
 </script>
 
 <style scoped>
+.title > h1 {
+  margin: 0.5em 0;
+}
+.description {
+  font-size: 1.2em;
+}
 </style>

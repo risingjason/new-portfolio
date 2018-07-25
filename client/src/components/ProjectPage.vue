@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import ProjectFile from '@/projects.json';
+import ProjectFile from '@/text/projects.json';
 
 export default {
   data() {
