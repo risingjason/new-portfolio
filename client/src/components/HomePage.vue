@@ -5,7 +5,7 @@
     </div>
 
     <div
-      class="title"
+      class="home-section"
       v-for="(article, key) in home" :key="key">
       <h1 class="dark-red">{{ article.title }}</h1>
       <p v-html="createBreak(article.description)" class="description"></p>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-.title > h1 {
+.home-section > h1 {
   margin: 0.5em 0;
 }
 .description {

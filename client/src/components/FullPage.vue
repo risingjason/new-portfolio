@@ -111,8 +111,8 @@ export default {
   position: absolute;
   border-radius: 5px;
   background-color: grey;
-  top: 0.5em;
-  left: 0.5em;
+  top: 1rem;
+  left: 0.4rem;
   padding: 0.2em;
   width: 2em;
   height: 2em;
