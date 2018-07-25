@@ -7,7 +7,7 @@
     <hr v-if="!isTablet">
 
     <!-- menu button -->
-    <div class="icon-ctr">
+    <div v-if="isTablet" class="icon-ctr">
       <font-awesome-icon
         @click="showNavBar()"
         class="icon"
@@ -147,10 +147,13 @@ export default {
   opacity: 1;
 }
 /* Mobile Nav Bar Transition */
-.mobile-bar-enter-active, .mobile-bar-leave-active {
+.mobile-bar-enter-active {
   transition-property: transform, max-width, width;
-  transition: 0.75s ease-in-out;
+  transition: 0.35s ease-in-out;
   z-index: 2;
+}
+.mobile-bar-leave-active {
+  transition: 0.1s ease;
 }
 .mobile-bar-enter, .mobile-bar-leave-to {
   transform: translateX(-100em);
@@ -160,8 +163,11 @@ export default {
   max-width: 100%;
 }
 /* Faded Bg Transition */
-.fade-bg-enter-active, .fade-bg-leave-active {
-  transition: opacity 1s ease;
+.fade-bg-enter-active{
+  transition: opacity 0.5s ease;
+}
+.fade-bg-leave-active {
+  transition-delay: 0s;
 }
 .fade-bg-enter, .fade-bg-leave-to {
   opacity: 0;
@@ -203,10 +209,13 @@ export default {
   * {
     font-size: 16px;
   }
+  .mobile-nav-ctr {
+    width: 67%;
+  }
 }
 @media screen and (max-width: 500px) {
   * {
-    font-size: 2.5vw;
+    font-size: 14px;
   }
 }
 </style>

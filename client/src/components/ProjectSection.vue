@@ -39,10 +39,7 @@ export default {
   },
   methods: {
     createBreak(text) {
-      if (!this.isTablet) {
-        return text.split('\n').join('<br />');
-      }
-      return text;
+      return text.split('\n').join('<br />');
     },
     getImage(img) {
       const image = require.context('../assets/', false, /\.png$/);
@@ -125,9 +122,13 @@ p {
 
 /* Tablets and Mobile */
 @media screen and (max-width: 700px) {
+  p {
+    margin: 0;
+  }
   #section {
-    grid-auto-rows: 50%;
-    /* grid-template-columns: 100%; */
+    grid-auto-rows: 50% 50%;
+    grid-template-columns: 100%;
+    grid-row-gap: 1em;
     max-height: 30em;
   }
   #section:active, #section:focus, #section:hover {

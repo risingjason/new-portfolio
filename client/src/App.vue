@@ -46,7 +46,6 @@ html, body {
   font-size: 0.9em;
 }
 
-
 /* Tablets and Mobile */
 @media screen and (max-width: 1100px) {
   .page-head {
