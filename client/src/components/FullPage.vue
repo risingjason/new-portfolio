@@ -25,6 +25,7 @@
         class="mobile-nav-ctr">
         <nav-bar
           v-if="mobileNavBar"
+          @routeChange="showNavBar()"
           :style="{ backgroundColor: homeStyle.backgroundColor }"
           class="mobile-nav" />
       </div>
@@ -69,7 +70,6 @@ export default {
   },
   computed: {
     isTablet() {
-      this.mobileNavBar = false;
       return this.$mq === 'smMobile' || this.$mq === 'mdMobile' || this.$mq === 'smTablet' || this.$mq === 'lgTablet';
     },
   },

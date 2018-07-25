@@ -7,9 +7,7 @@
     </p>
 
     <!-- nav bar links -->
-    <ul
-      class="navi"
-      >
+    <ul class="navi">
       <li>
         <p class="hover-ul"
           @click="jumpTo('Home')">
@@ -48,6 +46,7 @@ export default {
   },
   methods: {
     jumpTo(routeName) {
+      this.$emit('routeChange');
       this.$router.push({
         name: routeName,
       });
