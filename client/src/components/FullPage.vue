@@ -103,17 +103,12 @@ export default {
 }
 .mobile-nav-ctr {
   position: absolute;
-  width: 100%;
+  width: 35%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
+  z-index: 2;
 }
 .mobile-nav {
   padding-right: 2em;
-  width: auto;
-  z-index: 2;
-  max-width: 100%;
-  flex-basis: 25%;
 }
 .icon-ctr {
   position: absolute;

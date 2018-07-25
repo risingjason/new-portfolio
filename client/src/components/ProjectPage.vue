@@ -43,15 +43,11 @@ a {
   color: #aeaeae;
   text-decoration: none;
 }
-#projects {
-  height: 100%;
-}
 a:hover, a:visited {
   color: #aeaeae;
 }
 .end-of-page {
   align-self: flex-end;
-  margin-top: 5em;
 }
 .end-of-page > small {
   font-size: 1.2em;
