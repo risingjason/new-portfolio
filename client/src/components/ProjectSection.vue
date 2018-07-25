@@ -67,7 +67,8 @@ p {
 
   border: solid 2px #efefef;
   border-radius: 5px;
-  transition: all .3s ease-in-out;
+  transition-property: box-shadow, tranform;
+  transition: .3s ease-in-out;
 
   overflow: hidden;
   cursor: pointer;
@@ -75,7 +76,8 @@ p {
 #section:active, #section:focus, #section:hover {
   box-shadow: 5px 5px 50px #cecece;
   transform: scale(1.025);
-  transition: all .3s ease-in-out;
+  transition-property: box-shadow, tranform;
+  transition: .3s ease-in-out;
 }
 .description {
   color: black;

@@ -4,15 +4,31 @@
 // font-awesome-icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowCircleUp, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import Vue from 'vue';
+import VueMq from 'vue-mq';
+
 import App from './App';
 import router from './router';
 
 Vue.config.productionTip = false;
 
-library.add(faLinkedinIn, faGithub);
+// vue media queries
+Vue.use(VueMq, {
+  breakpoints: {
+    smMobile: 390,
+    mdMobile: 500,
+    smTablet: 800,
+    lgTablet: 1100,
+    mdDesktop: 1350,
+    desktop: Infinity,
+  },
+});
+
+// font awesome
+library.add(faLinkedinIn, faGithub, faArrowCircleUp, faSpinner);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 /* eslint-disable no-new */

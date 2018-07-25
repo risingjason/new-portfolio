@@ -35,7 +35,6 @@ export default {
 </script>
 
 <style scoped>
-
 p {
   margin: 0;
   display: inline-block;
@@ -44,10 +43,14 @@ a {
   color: #aeaeae;
   text-decoration: none;
 }
+#projects {
+  height: 100%;
+}
 a:hover, a:visited {
   color: #aeaeae;
 }
 .end-of-page {
+  align-self: flex-end;
   margin-top: 5em;
 }
 .end-of-page > small {

@@ -7,7 +7,9 @@
     </p>
 
     <!-- nav bar links -->
-    <ul class="navi">
+    <ul
+      class="navi"
+      >
       <li>
         <p class="hover-ul"
           @click="jumpTo('Home')">
@@ -67,8 +69,6 @@ a {
   width: 100%;
   height: 100%;
 
-  padding-left: 5em;
-  padding-right: 3em;
   text-align: end;
 
   display: flex;
