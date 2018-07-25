@@ -114,4 +114,12 @@ p {
   object-position: top;
   object-fit: cover;
 }
+
+/* Tablets and Mobile */
+@media screen and (max-width: 1100px) {
+  #section:active, #section:focus, #section:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
 </style>

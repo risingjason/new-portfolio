@@ -7,16 +7,13 @@
     <hr v-if="!isTablet">
 
     <!-- menu button -->
-    <transition name="mobile-bar">
-      <div class="icon-ctr"
-        v-if="isTablet && !mobileNavBar">
-        <font-awesome-icon
-          @click="showNavBar()"
-          class="icon"
-          icon="bars"
-          size="7x" />
-      </div>
-    </transition>
+    <div class="icon-ctr">
+      <font-awesome-icon
+        @click="showNavBar()"
+        class="icon"
+        icon="bars"
+        size="7x" />
+    </div>
 
     <!-- mobile navbar modal -->
     <transition name="mobile-bar">
@@ -137,6 +134,7 @@ export default {
   opacity: 0.75;
   z-index: 1;
 }
+
 /* Next Page Transition */
 .next-page-enter-active, .next-page-leave-active {
   transition: all 0.75s ease-in-out;
@@ -196,6 +194,9 @@ export default {
   }
   .content {
     flex-basis: 100%;
+  }
+  .content > * {
+    margin: 1em 0.5em 0 0.5em;
   }
 }
 @media screen and (max-width: 800px) {

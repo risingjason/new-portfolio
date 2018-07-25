@@ -45,4 +45,12 @@ html, body {
   color: black;
   font-size: 0.9em;
 }
+
+
+/* Tablets and Mobile */
+@media screen and (max-width: 1100px) {
+  .page-head {
+    margin-left: 3em; 
+  }
+}
 </style>
