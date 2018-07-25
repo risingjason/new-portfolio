@@ -4,7 +4,7 @@
 // font-awesome-icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowCircleUp, faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 import Vue from 'vue';
@@ -28,7 +28,7 @@ Vue.use(VueMq, {
 });
 
 // font awesome
-library.add(faLinkedinIn, faGithub, faArrowCircleUp, faSpinner);
+library.add(faLinkedinIn, faGithub, faBars);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 /* eslint-disable no-new */
