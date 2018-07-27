@@ -2,7 +2,7 @@
 const openLink = (link) => { window.open(link, '_blank'); };
 
 // combines an array of strings with <br> to serperate them
-const createBreak = (text) => text.join('<br />');
+const createBreak = text => text.join('<br />');
 
 const methods = {
   openLink,

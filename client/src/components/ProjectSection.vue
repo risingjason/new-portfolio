@@ -1,8 +1,7 @@
 <template>
   <div
     id="section"
-    @click="openLink(projectLink)"
-  >
+    @click="openLink(projectLink)">
     <div class="left">
       <h1 class="title dark-red">
         {{projectTitle}}
@@ -48,7 +47,7 @@ export default {
     isTablet() {
       return this.$mq === 'smMobile' || this.$mq === 'mdMobile' || this.$mq === 'smTablet' || this.$mq === 'lgTablet';
     },
-  }
+  },
 };
 </script>
 
@@ -57,11 +56,11 @@ p {
   margin: 0.5em 0;
 }
 #section {
-  padding: 0.5em 0.85em;
+  padding: 0;
   margin-bottom: 1.5em;
 
   height: auto;
-  max-height: 12.5em;
+  max-height: 15em;
 
   flex: 1;
   display: grid;
@@ -96,6 +95,7 @@ p {
 }
 
 .left {
+  padding: 0.5em 0.85em;
   width: inherit;
   height: inherit;
   grid-column: 1;
@@ -112,7 +112,6 @@ p {
 
   width: 100%;
   height: 100%;
-  max-height: 12.5em;
 
   object-position: top;
   object-fit: cover;

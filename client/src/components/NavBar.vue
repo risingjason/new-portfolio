@@ -5,26 +5,19 @@
       @click="jumpTo('Home')">
       Jason Yatfai Zhang
     </p>
-
     <!-- nav bar links -->
     <ul class="navi">
-      <li>
+      <li v-for="(child,key) in getChildrenRoutes" :key="key">
         <p class="hover-ul"
-          @click="jumpTo('Home')">
-          Home
-        </p>
-      </li>
-      <li>
-        <p class="hover-ul"
-          @click="jumpTo('Projects')">
-          Projects
+          :class="{ 'active-ul': isHere(child.name) }"
+          @click="jumpTo(child.name)">
+          {{child.name}}
         </p>
       </li>
     </ul>
 
     <!-- contact links -->
     <div class="contact-links">
-      <!-- <font-awesome-icon icon="linkedin-in" /> -->
       <font-awesome-icon
         @click="openLink('https://linkedin.com/in/jasonyatfaizhang')"
         :icon="['fab', 'linkedin-in']" />
@@ -40,7 +33,11 @@ import methods from '@/helpers';
 
 export default {
   data() {
-    return {};
+    return {
+      currentRouteStyle: {
+        'box-shadow': '0px 2px 0px #b30000;',
+      },
+    };
   },
   methods: {
     jumpTo(routeName) {
@@ -52,6 +49,17 @@ export default {
     openLink(link) {
       this.$emit('routeChange');
       methods.openLink(link);
+    },
+    isHere(routeName) {
+      if (this.$route.name === routeName) {
+        return true;
+      }
+      return false;
+    },
+  },
+  computed: {
+    getChildrenRoutes() {
+      return this.$router.options.routes[0].children;
     },
   },
 };
@@ -88,14 +96,16 @@ a {
 }
 .hover-ul {
   cursor: pointer;
-  padding: 0 0.25em;
+  padding: 0 2px;
   display: inline-block;
   transition: .15s ease-in-out;
 }
+.active-ul {
+  box-shadow: 0px 2px 0px #b30000;
+}
 .hover-ul:hover {
   transition: .3s ease-in-out;
-  box-shadow: 0 1.5px #585858;
-  /* text-decoration: underline; */
+  box-shadow: 0px 2px 0px #b30000;
 }
 .contact-links {
   display: flex;
@@ -105,5 +115,14 @@ a {
 .contact-links > * {
   margin: 0 0.5em;
   cursor: pointer;
+}
+.contact-links > *:hover {
+  color: #b30000;
+}
+
+@media screen and (max-width: 700px) {
+  .hover-ul:hover {
+    box-shadow: none;
+  }
 }
 </style>

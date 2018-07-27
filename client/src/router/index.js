@@ -17,14 +17,15 @@ export default new Router({
     {
       path: '/',
       component: FullPage,
+      redirect: 'home',
       children: [
         {
-          path: '',
+          path: 'home',
           component: HomePage,
           name: 'Home',
         },
         {
-          path: '/projects',
+          path: 'projects',
           component: ProjectPage,
           name: 'Projects',
         },
