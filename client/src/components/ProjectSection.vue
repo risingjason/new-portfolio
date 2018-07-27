@@ -118,19 +118,22 @@ p {
 }
 
 /* Tablets and Mobile */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   p {
     margin: 0;
   }
+
+  #section:active, #section:focus, #section:hover {
+    box-shadow: none;
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 700px) {
   #section {
     grid-auto-rows: 50% 50%;
     grid-template-columns: 100%;
     grid-row-gap: 1em;
     max-height: 30em;
-  }
-  #section:active, #section:focus, #section:hover {
-    box-shadow: none;
-    transform: scale(1);
   }
   .left {
     grid-column: 1;

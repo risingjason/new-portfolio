@@ -87,6 +87,7 @@ a {
   margin-top: 5em;
   margin-bottom: 1.5em;
   font-size: 1.5em;
+  cursor: pointer;
 }
 #navbar > .navi li {
   margin: 0.5em 0;
