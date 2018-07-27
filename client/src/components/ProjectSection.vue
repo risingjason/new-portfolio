@@ -130,12 +130,15 @@ p {
 }
 @media screen and (max-width: 700px) {
   #section {
+    font-size: 1.1em;
+
     grid-auto-rows: 50% 50%;
     grid-template-columns: 100%;
     grid-row-gap: 1em;
     max-height: 30em;
   }
   .left {
+    padding: 0.1em 0.4em;
     grid-column: 1;
     grid-row: 1;
   }

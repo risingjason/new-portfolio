@@ -121,9 +121,15 @@ a {
   color: #b30000;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+  #navbar {
+    font-size: 1.2em;
+  }
   .hover-ul:hover {
     box-shadow: none;
+  }
+  .contact-links > *:hover {
+    color: inherit;
   }
 }
 </style>
