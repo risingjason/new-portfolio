@@ -138,7 +138,7 @@ p {
     max-height: 30em;
   }
   .left {
-    padding: 0.1em 0.4em;
+    padding: 0.1em 0 0.1em 0.4em;
     grid-column: 1;
     grid-row: 1;
   }
