@@ -136,15 +136,19 @@ export default {
 }
 
 /* Next Page Transition */
-.next-page-enter-active, .next-page-leave-active {
-  transition: all 0.75s ease-in-out;
+.next-page-enter-active {
+  animation: new-page 0.6s ease-out;
 }
-.next-page-enter, .next-page-leave-to {
-  opacity: 0;
-  transform: translateX(10em);
+.next-page-leave-active {
+  animation: leave-page 0.4s ease-out;
 }
-.next-page-enter-to, .next-page-leave {
-  opacity: 1;
+@keyframes new-page {
+  from { transform: translateX(-20em); opacity: 0; }
+  to { transform: translateX(0em); opacity: 1; }
+}
+@keyframes leave-page {
+  from { transform: translateX(0em) scale(1); opacity: 0.75; }
+  to { transform: translateX(7em) scale(0.7); opacity: 0; }
 }
 /* Mobile Nav Bar Transition */
 .mobile-bar-enter-active {
@@ -175,6 +179,7 @@ export default {
 .fade-bg-enter-to, .fade-bg-leave {
   opacity: 0.75;
 }
+
 /* Desktop Responsiveness */
 @media screen and (max-width: 1400px) {
   * {

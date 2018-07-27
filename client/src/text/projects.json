@@ -1,6 +1,6 @@
 [
   {
-    "title": "Discord Chat Bot",
+    "title": "Discord Chat Bot (2018)",
     "description": [
       "A Discord bot that reads user input and returns replies.",
       "Created with Discord.js and hosted with Heroku.",
@@ -13,7 +13,7 @@
     "link": "https://github.com/risingjason/discord-bot-nodejs"
   },
   {
-    "title": "Maximum Tower",
+    "title": "Maximum Tower (2016)",
     "description": [
       "Tower defense game made with funny sprites.",
       "2016 Davis Game Development Club Fall Game Jam submission. Winner of People's Choice Award.",
