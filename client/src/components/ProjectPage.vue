@@ -29,8 +29,6 @@ export default {
       projects: ProjectFile,
     };
   },
-  created() {
-  },
 };
 </script>
 
