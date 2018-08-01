@@ -123,7 +123,7 @@ a {
 
 @media screen and (max-width: 800px) {
   #navbar {
-    font-size: 1.2em;
+    font-size: 1.35em;
   }
   .hover-ul:hover {
     box-shadow: none;
