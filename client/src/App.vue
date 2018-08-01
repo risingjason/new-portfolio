@@ -28,8 +28,8 @@ html, body {
   color: #585858;
 }
 /* Global Styles */
-.dark-red {
-  color: #b30000;
+.color-theme {
+  color: #3399ff;
 }
 .light-gray {
   color: #aeaeae;

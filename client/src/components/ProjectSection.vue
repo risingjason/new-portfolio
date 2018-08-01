@@ -3,7 +3,7 @@
     id="section"
     @click="openLink(projectLink)">
     <div class="left">
-      <h1 class="title dark-red">
+      <h1 class="title color-theme">
         {{projectTitle}}
       </h1>
       <p class="light-gray">Click to see the Project Link!</p>
@@ -143,7 +143,6 @@ p {
     grid-row: 1;
   }
   .right {
-    /* width: 50em; */
     grid-column: 1;
     grid-row: 2;
   }

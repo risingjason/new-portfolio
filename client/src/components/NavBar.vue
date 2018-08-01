@@ -1,7 +1,7 @@
 <template>
   <div id="navbar">
     <!-- name -->
-    <p class="name dark-red"
+    <p class="name color-theme"
       @click="jumpTo('Home')">
       Jason Yatfai Zhang
     </p>
@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       currentRouteStyle: {
-        'box-shadow': '0px 2px 0px #b30000;',
+        'box-shadow': '0px 2px 0px',
       },
     };
   },
@@ -95,18 +95,18 @@ a {
 #navbar > .navi li p {
   margin: 0;
 }
+.active-ul {
+  box-shadow: 0px 2px 0px #3399ff;
+}
 .hover-ul {
   cursor: pointer;
   padding: 0 2px;
   display: inline-block;
   transition: .15s ease-in-out;
 }
-.active-ul {
-  box-shadow: 0px 2px 0px #b30000;
-}
 .hover-ul:hover {
   transition: .3s ease-in-out;
-  box-shadow: 0px 2px 0px #b30000;
+  box-shadow: 0px 2px 0px #3399ff;
 }
 .contact-links {
   display: flex;
@@ -118,7 +118,7 @@ a {
   cursor: pointer;
 }
 .contact-links > *:hover {
-  color: #b30000;
+  color: #3399ff;
 }
 
 @media screen and (max-width: 800px) {

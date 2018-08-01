@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
     <div id="title" class="page-head">
-      <h2 class="dark-red">Projects</h2>
+      <h2 class="color-theme">Projects</h2>
     </div>
     <div class="project-section">
       <proj-section
