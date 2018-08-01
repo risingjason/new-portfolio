@@ -125,16 +125,20 @@ a {
   color: #3399ff;
 }
 .prof-pic  {
+  align-self: flex-end;
   width: 7.5em;
   height: 7.5em;
-  align-self: flex-end;
+
   margin-top: 5em;
-  border: solid 0.25em #222222;
+  padding: 0;
+
+  background-color: #222222;
+  border: solid 8.5px #222222;
   border-radius: 50%;
 }
 .prof-pic > img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
