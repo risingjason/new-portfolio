@@ -133,7 +133,7 @@ a {
   padding: 0;
 
   background-color: #222222;
-  border: solid 8.5px #222222;
+  border: solid 0.35em #222222;
   border-radius: 50%;
 }
 .prof-pic > img {
@@ -153,8 +153,9 @@ a {
     color: inherit;
   }
   .prof-pic  {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
+    margin-top: 3em;
     border: solid 5px #222222;
   }
 }
