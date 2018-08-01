@@ -1,5 +1,10 @@
 <template>
   <div id="navbar">
+    <!-- picture -->
+    <div class="prof-pic">
+      <img src="../assets/prof-pic.jpeg" />
+    </div>
+
     <!-- name -->
     <p class="name color-theme"
       @click="jumpTo('Home')">
@@ -84,8 +89,7 @@ a {
   flex-direction: column;;
 }
 #navbar > .name {
-  margin-top: 5em;
-  margin-bottom: 1.5em;
+  margin: 1.5em 0;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -120,6 +124,19 @@ a {
 .contact-links > *:hover {
   color: #3399ff;
 }
+.prof-pic  {
+  width: 7.5em;
+  height: 7.5em;
+  align-self: flex-end;
+  margin-top: 5em;
+  border: solid 0.25em #222222;
+  border-radius: 50%;
+}
+.prof-pic > img {
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
 
 @media screen and (max-width: 800px) {
   #navbar {
@@ -130,6 +147,11 @@ a {
   }
   .contact-links > *:hover {
     color: inherit;
+  }
+  .prof-pic  {
+    width: 100px;
+    height: 100px;
+    border: solid 5px #222222;
   }
 }
 </style>
