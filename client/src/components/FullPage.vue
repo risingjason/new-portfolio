@@ -1,6 +1,7 @@
 <template>
   <div id="base"
-    :style="{ backgroundColor: homeStyle.backgroundColor }">
+    :style="{ backgroundColor: bgColor }"
+    :class="{ 'bright-gray': isDM, 'black': !isDM }">
 
     <!-- desktop nav bar -->
     <nav-bar class="navigate" v-if="!isTablet"/>
@@ -23,7 +24,7 @@
         <nav-bar
           v-if="mobileNavBar"
           @routeChange="showNavBar()"
-          :style="{ backgroundColor: homeStyle.backgroundColor }"
+          :style="{ backgroundColor: bgColor }"
           class="mobile-nav" />
       </div>
     </transition>
@@ -41,6 +42,12 @@
         <router-view />
       </transition>
     </div>
+
+    <!-- dark mode icon-->
+    <dark-mode
+      :isDM="isDM"
+      @darkModeToggle="changeDM()"
+      class="dark-mode" />
   </div>
 </template>
 
@@ -49,9 +56,7 @@ export default {
   name: 'FullPage',
   data() {
     return {
-      homeStyle: {
-        backgroundColor: '#fefefe',
-      },
+      isDM: false,
       mobileNavBar: false,
     };
   },
@@ -64,10 +69,16 @@ export default {
     showNavBar() {
       this.mobileNavBar = !this.mobileNavBar;
     },
+    changeDM() {
+      this.isDM = !this.isDM;
+    },
   },
   computed: {
     isTablet() {
       return this.$mq === 'smMobile' || this.$mq === 'mdMobile' || this.$mq === 'smTablet' || this.$mq === 'lgTablet';
+    },
+    bgColor() {
+      return this.isDM ? '#3f3f3f' : '#efefef';
     },
   },
 };
@@ -84,6 +95,8 @@ export default {
 
   display: flex;
   flex-direction: row;
+
+  transition: color, background-color 0.35s ease;
 }
 .navigate {
   flex-basis: 15%;
@@ -98,8 +111,14 @@ export default {
 .content > * {
   margin: 1em 8em 0em 8em;
 }
+.dark-mode {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  cursor: pointer;
+}
 .mobile-nav-ctr {
-  position: absolute;
+  position: fixed;
   width: 35%;
   height: 100%;
   z-index: 2;

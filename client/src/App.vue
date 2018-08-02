@@ -25,7 +25,6 @@ html, body {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #585858;
 }
 /* Global Styles */
 .color-theme {
@@ -34,6 +33,12 @@ html, body {
 .light-gray {
   color: #aeaeae;
 }
+.bright-gray {
+  color: #dfdfdf;
+}
+.black {
+  color: #585858;
+}
 .page-head > * {
   margin: 0;
   font-size: 2em;
@@ -41,15 +46,11 @@ html, body {
 .page-head > h2 {
   margin-bottom: 1em;
 }
-.description {
-  color: black;
-  font-size: 0.9em;
-}
 
 /* Tablets and Mobile */
 @media screen and (max-width: 1100px) {
   .page-head {
-    margin-left: 1.5em;
+    margin-left: 2.2em;
   }
 }
 </style>

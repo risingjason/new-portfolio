@@ -67,7 +67,7 @@ p {
   grid-template-rows: 100%;
   grid-template-columns: 50% 50%;
 
-  border: solid 2px #efefef;
+  border: solid 2px #cdcdcd;
   border-radius: 5px;
   transition-property: box-shadow, tranform;
   transition: .3s ease-in-out;
@@ -82,7 +82,6 @@ p {
   transition: .3s ease-in-out;
 }
 .description {
-  color: black;
   font-size: 0.9em;
 }
 .title {
