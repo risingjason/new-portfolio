@@ -78,7 +78,7 @@ export default {
       return this.$mq === 'smMobile' || this.$mq === 'mdMobile' || this.$mq === 'smTablet' || this.$mq === 'lgTablet';
     },
     bgColor() {
-      return this.isDM ? '#3f3f3f' : '#efefef';
+      return this.isDM ? '#3f3f3f' : '#fefefe';
     },
   },
 };
