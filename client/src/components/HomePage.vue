@@ -8,7 +8,10 @@
       class="home-section"
       v-for="(article, key) in home" :key="key">
       <h1 class="color-theme">{{ article.title }}</h1>
-      <p v-html="createBreak(article.description)" class="description"></p>
+      <p v-for="(paragraph, key) in article.description" :key="key"
+        class="description">
+        {{ paragraph }}
+      </p>
     </div>
   </div>
 </template>
@@ -33,6 +36,8 @@ export default {
   font-size: 1.8em;
 }
 .description {
+  margin: 0.8em 0;
+  line-height: 1.5;
   font-size: 1.2em;
 }
 </style>

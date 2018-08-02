@@ -3,17 +3,13 @@
     "title": "About Me",
     "description": [
       "Hi, my name is Jason and welcome to my website!",
-      "I am from Los Angeles, but I went to UC Davis for college where I received my Computer Science degree.",
-      "If you would like to see what I've worked on, please check out the projects section.",
-      "Also, there are links where you are able to contact me on the side bar."
+      "I am from Los Angeles, but I went to UC Davis for college where I received my Computer Science degree. If you would like to see what I've worked on, please check out the projects section. Also, there are links where you are able to contact me on the side bar."
     ]
   },
   {
     "title": "Interests",
     "description": [
-      "Right now I am enjoying Web Development. My first personal project has been to create this website with Vue.",
-      "I mainly work with Vue.js, which I have been practicing for almost a year",
-      "I have also been honing my JavaScript skills through creating Node.js apps and studying up on new content like ES6."
+      "Right now I am enjoying Web Development. My first personal project has been to create this website with Vue. I mainly work with Vue.js, which I have been practicing for almost a year. I have also been honing my JavaScript skills through creating Node.js apps and studying up on new content like ES6."
     ]
   }
 ]

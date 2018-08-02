@@ -96,7 +96,7 @@ export default {
   overflow-y: auto;
 }
 .content > * {
-  margin: 1em 4em 0em 4em;
+  margin: 1em 8em 0em 8em;
 }
 .mobile-nav-ctr {
   position: absolute;
@@ -205,6 +205,7 @@ export default {
   }
   .content {
     flex-basis: 100%;
+    padding: 0 1.5em;
   }
   .content > * {
     margin: 1em 0.5em 0 0.5em;
@@ -213,6 +214,9 @@ export default {
 @media screen and (max-width: 800px) {
   * {
     font-size: 16px;
+  }
+  .content {
+    padding: 0 0.5em;
   }
   .mobile-nav-ctr {
     width: 67%;

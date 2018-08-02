@@ -104,7 +104,7 @@ a {
 }
 .hover-ul {
   cursor: pointer;
-  padding: 0 2px;
+  padding: 0;
   display: inline-block;
   transition: .15s ease-in-out;
 }
